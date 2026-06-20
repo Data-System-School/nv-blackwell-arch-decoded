@@ -113,17 +113,30 @@
   function showTip(el){
     var o = lookup(el); if(!o) return;
     tip.innerHTML = "<b>"+o.t+"</b> &middot; "+o.c+"<br>"+o.d;
+    activeEl = el;
+    placeTip(el);                              // position + pick above/below before the reveal
     tip.classList.add("show");
-    activeEl = el; placeTip(el);
   }
   function placeTip(el){
-    var r = el.getBoundingClientRect();
+    // Inline terms can wrap across lines; getBoundingClientRect() returns the union box
+    // whose centre falls in the gutter between fragments. Anchor to a real line box instead.
+    var rects = el.getClientRects();
+    var first = rects[0] || el.getBoundingClientRect();
+    var last  = rects[rects.length - 1] || first;
     var tr = tip.getBoundingClientRect();
-    var top = r.top - tr.height - 9;
-    if(top < 8) top = r.bottom + 9;            // flip below if no room above
-    var left = r.left + r.width/2 - tr.width/2;
-    left = Math.max(8, Math.min(left, window.innerWidth - tr.width - 8));
-    tip.style.top = top + "px"; tip.style.left = left + "px";
+    var gap = 10;
+    var aboveTop = first.top - tr.height - gap;
+    var below = aboveTop < 8;                   // no room above → drop below the term
+    var anchor = below ? last : first;          // sit above the first line, or below the last
+    var top  = below ? last.bottom + gap : aboveTop;
+    var cx   = anchor.left + anchor.width / 2;   // centre of the anchored line fragment
+    var left = Math.max(8, Math.min(cx - tr.width / 2, window.innerWidth - tr.width - 8));
+    tip.style.top = top + "px";
+    tip.style.left = left + "px";
+    tip.classList.toggle("below", below);
+    // keep the caret pointing at the term even when the bubble is clamped to a screen edge
+    var ax = Math.max(14, Math.min(cx - left, tr.width - 14));
+    tip.style.setProperty("--ax", ax + "px");
   }
   function hideTip(){ tip.classList.remove("show"); activeEl=null; }
   document.querySelectorAll(".gloss").forEach(function(el){

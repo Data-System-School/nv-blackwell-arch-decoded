@@ -109,11 +109,16 @@ td.num,th.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-ali
 
 /* ---------- glossary inline term ---------- */
 .gloss{border-bottom:1.5px dotted var(--nv);cursor:help;position:relative}
-.tip{position:fixed;z-index:70;max-width:300px;background:var(--ink);color:#eef3e6;
+.tip{position:fixed;z-index:70;max-width:min(300px,calc(100vw - 24px));background:var(--ink);color:#eef3e6;
   font-size:13.5px;line-height:1.5;padding:11px 13px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.28);
   opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s;pointer-events:none}
+.tip.below{transform:translateY(-4px)}
 .tip.show{opacity:1;transform:translateY(0)}
 .tip b{color:var(--nv-l)}
+/* caret: a rotated square merged into the bubble edge, pointing at the term (--ax set in JS) */
+.tip::after{content:"";position:absolute;left:var(--ax,50%);bottom:-5px;width:11px;height:11px;
+  background:var(--ink);border-radius:2px;transform:translateX(-50%) rotate(45deg)}
+.tip.below::after{bottom:auto;top:-5px}
 
 /* ---------- diagrams ---------- */
 figure{margin:24px 0}

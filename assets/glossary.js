@@ -42,6 +42,7 @@ window.GLOSSARY = [
   {t:"TensorRT-LLM", c:"Software", d:"NVIDIA's library for optimizing LLM inference — quantization, custom kernels, parallelism mapping — to run models faster and cheaper."},
   {t:"NeMo / Megatron-Core", c:"Software", d:"NVIDIA frameworks for training and customizing large models, including the parallelism techniques used to train trillion-parameter networks."},
   {t:"CUDA-X", c:"Software", d:"NVIDIA's ecosystem of GPU-accelerated libraries on top of CUDA, spanning AI, data science and HPC — used by 4M+ developers across 3,000+ applications."},
+  {t:"NIM (NVIDIA Inference Microservices)", c:"Software", d:"NVIDIA's prebuilt, containerized inference microservices — an optimized engine plus a model behind an industry-standard API — so enterprises can deploy AI models anywhere in minutes. Part of NVIDIA AI Enterprise."},
   {t:"TCO", c:"Economics", d:"Total Cost of Ownership — the full lifetime cost of running infrastructure (hardware, power, cooling, maintenance), not just the purchase price."},
   {t:"AI factory", c:"Economics", d:"A data center purpose-built to ‘manufacture’ AI tokens (responses). Its output is measured as throughput per megawatt balanced against per-user speed."},
   {t:"token", c:"AI models", d:"The unit a model reads and generates — roughly a word-piece for text. Reasoning and video generation can consume millions of tokens per request."},
