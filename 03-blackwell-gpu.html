@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Blackwell GPU · Blackwell, Decoded</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2376b900'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-module="gpu">
+<div id="scrollbar"></div>
+<div class="topbar"><button class="burger" aria-label="Menu"><span></span></button><b>Blackwell, <span class="nv">Decoded</span></b></div><div class="scrim"></div>
+<div class="layout">
+<aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><svg class="logo" viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="48" height="32" rx="4" fill="#76b900"/><path d="M13 9.5c5.5-.9 11.5.4 14.5 5.2-3.8-2.2-8-2.4-11.2-1.2v10.8h-3.3V9.5zM9 11.4v11.3c4.6 3.1 11.7 3.7 17.4.6 3.8-2.1 5.6-5.8 5.6-9.6-1.9 2.9-4.8 4.7-8.4 5.6v-3c2.6-.8 4.6-2.4 4.9-5-3.4-3.6-9.6-4.2-16.1-2.4l-3.4 1.9z" fill="#fff"/></svg><span><b>Blackwell,</b> <b>Decoded</b><span>NVIDIA architecture course</span></span></a><div class="sb-prog"><div class="count">0 / 8 modules</div><div class="track"><div class="fill"></div></div></div><ul class="nav"><li><a data-file="index.html" href="index.html"><span class="num">&#9632;</span><span class="lbl">Course home</span></a></li><li class="sec">Foundations</li>
+<li><a data-file="01-why-blackwell.html" data-id="why" href="01-why-blackwell.html"><span class="num">01</span><span class="lbl">Why Blackwell?</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a data-file="02-scaling-laws.html" data-id="scaling" href="02-scaling-laws.html"><span class="num">02</span><span class="lbl">The Three Scaling Laws</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li class="sec">The Architecture</li>
+<li><a data-file="03-blackwell-gpu.html" data-id="gpu" href="03-blackwell-gpu.html"><span class="num">03</span><span class="lbl">The Blackwell GPU</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a data-file="04-the-engines.html" data-id="engines" href="04-the-engines.html"><span class="num">04</span><span class="lbl">The Engines</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a data-file="05-nvlink.html" data-id="nvlink" href="05-nvlink.html"><span class="num">05</span><span class="lbl">NVLink &amp; Scaling Up</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li class="sec">The Systems</li>
+<li><a data-file="06-gb300-nvl72.html" data-id="gb300" href="06-gb300-nvl72.html"><span class="num">06</span><span class="lbl">GB300 NVL72 Rack</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a data-file="07-gb200-and-hgx.html" data-id="servers" href="07-gb200-and-hgx.html"><span class="num">07</span><span class="lbl">GB200 &amp; HGX Servers</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li class="sec">Going Deeper</li>
+<li><a data-file="08-parallelism.html" data-id="parallel" href="08-parallelism.html"><span class="num">08</span><span class="lbl">Inference Deep-Dive</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li><li class="sec">Reference</li><li><a data-file="glossary.html" href="glossary.html"><span class="num">&#167;</span><span class="lbl">Glossary</span></a></li></ul></aside>
+<div class="main"><div class="wrap content">
+<div class="kicker">The Architecture · Module 3</div><h1>The Blackwell GPU</h1><div class="meta"><span>A new class of chip</span><span class="dot"></span><span>8 min read</span><span class="dot"></span><span>Module 3 of 8</span></div><p class="lede">At the heart of every Blackwell product is one remarkable chip. NVIDIA calls it the largest GPU ever built — and it earns the title by breaking a physical manufacturing limit and stitching two chips into one.</p>
+<div class="stats"><div class="stat"><div class="big">208B</div><div class="lab">transistors (&gt;2.5× Hopper)</div></div><div class="stat"><div class="big">20</div><div class="lab">petaFLOPS peak compute</div></div><div class="stat"><div class="big">10 TB/s</div><div class="lab">die-to-die NV-HBI link</div></div><div class="stat"><div class="big">2</div><div class="lab">dies fused into one GPU</div></div></div>
+<h2><span class="hsh">#</span>Two dies, one chip</h2>
+<p>Chipmakers can only pattern a silicon area up to the <span class="gloss" data-term="reticle limit">reticle limit</span>
+in a single exposure. Blackwell hit that ceiling — so NVIDIA built <strong>two</strong> maximum-size
+<span class="gloss" data-term="die">dies</span>, as large as can be made today, and fused them with a
+<strong>10 terabyte-per-second</strong> <span class="gloss" data-term="NV-HBI">NV-HBI</span> chip-to-chip link. The result
+behaves as <em>one fully coherent GPU</em>, not two — software sees a single device.</p>
+
+<figure><div class="diagram">
+<svg viewBox="0 0 620 220" role="img" aria-label="Two GPU dies joined by NV-HBI">
+<g font-family="-apple-system,Segoe UI,sans-serif">
+  <rect x="60" y="50" width="200" height="120" rx="12" fill="#e7f3d4" stroke="#5e9400" stroke-width="1.5"/>
+  <rect x="360" y="50" width="200" height="120" rx="12" fill="#e7f3d4" stroke="#5e9400" stroke-width="1.5"/>
+  <text x="160" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#0c1108">GPU die 1</text>
+  <text x="160" y="124" text-anchor="middle" font-size="12" fill="#46603a">reticle-sized</text>
+  <text x="460" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#0c1108">GPU die 2</text>
+  <text x="460" y="124" text-anchor="middle" font-size="12" fill="#46603a">reticle-sized</text>
+  <rect x="260" y="92" width="100" height="36" fill="#76b900"/>
+  <text x="310" y="111" text-anchor="middle" font-size="12" font-weight="700" fill="#0c1108">NV-HBI</text>
+  <text x="310" y="150" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5e9400">10 TB/s</text>
+  <text x="310" y="34" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3c4632">One fully coherent Blackwell GPU</text>
+  <rect x="48" y="38" width="524" height="144" rx="16" fill="none" stroke="#9aa692" stroke-dasharray="5 5"/>
+</g></svg></div><figcaption>Two reticle-limit dies act as a single GPU thanks to the 10 TB/s NV-HBI bridge.</figcaption></figure>
+
+<p>Blackwell is built on a TSMC <strong>4NP</strong> process tailored for NVIDIA, reaching the highest compute ever on a
+single chip: <strong>20 petaFLOPS</strong>. But raw FLOPS are only part of the story — it also inherits NVIDIA’s
+<span class="gloss" data-term="CUDA-X">CUDA-X</span> software ecosystem: 4 million+ developers and 3,000+ applications.</p>
+
+<h2><span class="hsh">#</span>Blackwell Ultra: tuned for reasoning</h2>
+<p>The <strong>Blackwell Ultra</strong> GPU adds even more compute and memory specifically for the age of AI reasoning.
+Packaged as the GB300 NVL72, it delivers <strong>1.5×</strong> more AI performance than the GB200 NVL72 — and
+against the older Hopper generation the gains are dramatic:</p>
+<div class="stats"><div class="stat"><div class="big">50×</div><div class="lab">more AI reasoning productivity</div></div><div class="stat"><div class="big">35×</div><div class="lab">faster AI reasoning inference</div></div><div class="stat"><div class="big">30×</div><div class="lab">higher energy efficiency</div></div><div class="stat"><div class="big">25×</div><div class="lab">lower cost per token</div></div></div>
+<p class="meta" style="margin-top:-6px">All vs. NVIDIA Hopper systems. We unpack where these numbers come from in
+Module 6.</p>
+
+<h2><span class="hsh">#</span>The new math: low-precision number formats</h2>
+<p>A big reason Blackwell is so fast is that it does AI math in <em>smaller numbers</em>. The fewer bits each number uses,
+the more numbers the chip can push through its math units and memory at once. The work happens in
+<span class="gloss" data-term="Tensor Core">Tensor Cores</span> — specialized units for matrix
+multiply-and-accumulate that first appeared in the 2017 Tesla V100 and are now in their <strong>5th generation</strong>.</p>
+<p>The headline addition is <span class="gloss" data-term="FP4">FP4</span> — just 4 bits per number — including
+community-standardized <span class="gloss" data-term="microscaling (MX / OCP)">microscaling (OCP)</span> formats. Blackwell
+supports a full ladder of precisions:</p>
+
+<div class="tablewrap"><table>
+<caption>Table 1 — Blackwell-supported data types, from full precision (top) to ultra-low (bottom)</caption>
+<thead><tr><th>Format</th><th class="num">Bits</th><th>Typically used for</th></tr></thead>
+<tbody>
+<tr><td><span class="gloss" data-term="FP32 / FP64">FP64</span></td><td class="num">64</td><td>Scientific / HPC, maximum accuracy</td></tr>
+<tr><td>FP32</td><td class="num">32</td><td>General-purpose full precision</td></tr>
+<tr><td><span class="gloss" data-term="TF32">TF32</span></td><td class="num">~19*</td><td>Faster training, near-FP32 range</td></tr>
+<tr><td><span class="gloss" data-term="FP16 / BF16">FP16</span></td><td class="num">16</td><td>Mixed-precision training / inference</td></tr>
+<tr><td><span class="gloss" data-term="FP16 / BF16">BF16</span></td><td class="num">16</td><td>Training with wider numeric range</td></tr>
+<tr><td><span class="gloss" data-term="FP8">FP8</span></td><td class="num">8</td><td>Fast training &amp; inference</td></tr>
+<tr><td><span class="gloss" data-term="INT8">INT8</span></td><td class="num">8</td><td>Quantized inference (integer)</td></tr>
+<tr><td><span class="gloss" data-term="FP6">FP6</span></td><td class="num">6</td><td>Efficient inference, more accuracy than FP4</td></tr>
+<tr><td class="hl">FP4</td><td class="num hl">4</td><td>Maximum-throughput reasoning inference</td></tr>
+</tbody></table></div>
+<p class="meta" style="margin-top:-8px">* TF32 stores in 32 bits but computes with reduced precision.</p>
+
+<figure><div class="diagram">
+<svg viewBox="0 0 640 210" role="img" aria-label="Relative bit-width of number formats">
+<g font-family="-apple-system,Segoe UI,sans-serif" font-size="13">
+<text x="86" y="28" text-anchor="end" fill="#3c4632" dominant-baseline="middle">FP64</text><rect x="98" y="20" width="486" height="18" rx="4" fill="#c3ccb4"/><text x="592" y="28" font-size="12" fill="#5c6654" dominant-baseline="middle">64-bit</text><text x="86" y="58" text-anchor="end" fill="#3c4632" dominant-baseline="middle">FP32</text><rect x="98" y="50" width="243" height="18" rx="4" fill="#c3ccb4"/><text x="349" y="58" font-size="12" fill="#5c6654" dominant-baseline="middle">32-bit</text><text x="86" y="88" text-anchor="end" fill="#3c4632" dominant-baseline="middle">FP16/BF16</text><rect x="98" y="80" width="121" height="18" rx="4" fill="#c3ccb4"/><text x="227" y="88" font-size="12" fill="#5c6654" dominant-baseline="middle">16-bit</text><text x="86" y="118" text-anchor="end" fill="#3c4632" dominant-baseline="middle">FP8 / INT8</text><rect x="98" y="110" width="60" height="18" rx="4" fill="#9bd62a"/><text x="166" y="118" font-size="12" fill="#5c6654" dominant-baseline="middle">8-bit</text><text x="86" y="148" text-anchor="end" fill="#3c4632" dominant-baseline="middle">FP6</text><rect x="98" y="140" width="45" height="18" rx="4" fill="#76b900"/><text x="151" y="148" font-size="12" fill="#5c6654" dominant-baseline="middle">6-bit</text><text x="86" y="178" text-anchor="end" fill="#3c4632" dominant-baseline="middle">FP4</text><rect x="98" y="170" width="30" height="18" rx="4" fill="#5e9400"/><text x="136" y="178" font-size="12" fill="#5c6654" dominant-baseline="middle">4-bit</text>
+<text x="98" y="200" font-size="12.5" fill="#5e9400" font-weight="700">Smaller numbers → more throughput, bigger models per GPU</text>
+</g></svg></div><figcaption>Halving the bits roughly doubles what a GPU can process — the core idea behind FP4.</figcaption></figure>
+
+<div class="callout note"><div class="t">The catch — and the fix</div><p>Fewer bits means less numerical precision,
+which can hurt accuracy. Blackwell’s <span class="gloss" data-term="Transformer Engine">2nd-gen Transformer Engine</span>
+(next module) is the clever system that keeps FP4 accurate enough to use. That’s what makes the low-precision speedups
+real rather than theoretical.</p></div>
+<div class="done-row"><button id="completeBtn" class="btn">Mark this module complete</button><a class="btn ghost" href="04-the-engines.html">Continue →</a></div><nav class="pager"><a class="prev" href="02-scaling-laws.html"><span class="dir">← Prev</span><span class="ttl">The Three Scaling Laws</span></a><a class="next" href="04-the-engines.html"><span class="dir">Next →</span><span class="ttl">The Engines</span></a></nav>
+</div></div>
+</div>
+<script src="assets/glossary.js"></script>
+<script src="assets/app.js"></script>
+
+</body>
+</html>

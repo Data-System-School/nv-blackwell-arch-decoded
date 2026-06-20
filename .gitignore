@@ -1,0 +1,5 @@
+# Source PDF (large binary; not tracked — see README)
+*.pdf
+
+# macOS
+.DS_Store

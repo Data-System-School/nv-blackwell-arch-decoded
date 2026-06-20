@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NVLink &amp; Scaling Up · Blackwell, Decoded</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2376b900'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-module="nvlink">
+<div id="scrollbar"></div>
+<div class="topbar"><button class="burger" aria-label="Menu"><span></span></button><b>Blackwell, <span class="nv">Decoded</span></b></div><div class="scrim"></div>
+<div class="layout">
+<aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><svg class="logo" viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="48" height="32" rx="4" fill="#76b900"/><path d="M13 9.5c5.5-.9 11.5.4 14.5 5.2-3.8-2.2-8-2.4-11.2-1.2v10.8h-3.3V9.5zM9 11.4v11.3c4.6 3.1 11.7 3.7 17.4.6 3.8-2.1 5.6-5.8 5.6-9.6-1.9 2.9-4.8 4.7-8.4 5.6v-3c2.6-.8 4.6-2.4 4.9-5-3.4-3.6-9.6-4.2-16.1-2.4l-3.4 1.9z" fill="#fff"/></svg><span><b>Blackwell,</b> <b>Decoded</b><span>NVIDIA architecture course</span></span></a><div class="sb-prog"><div class="count">0 / 8 modules</div><div class="track"><div class="fill"></div></div></div><ul class="nav"><li><a data-file="index.html" href="index.html"><span class="num">&#9632;</span><span class="lbl">Course home</span></a></li><li class="sec">Foundations</li>
+<li><a data-file="01-why-blackwell.html" data-id="why" href="01-why-blackwell.html"><span class="num">01</span><span class="lbl">Why Blackwell?</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a data-file="02-scaling-laws.html" data-id="scaling" href="02-scaling-laws.html"><span class="num">02</span><span class="lbl">The Three Scaling Laws</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li class="sec">The Architecture</li>
+<li><a data-file="03-blackwell-gpu.html" data-id="gpu" href="03-blackwell-gpu.html"><span class="num">03</span><span class="lbl">The Blackwell GPU</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a data-file="04-the-engines.html" data-id="engines" href="04-the-engines.html"><span class="num">04</span><span class="lbl">The Engines</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a data-file="05-nvlink.html" data-id="nvlink" href="05-nvlink.html"><span class="num">05</span><span class="lbl">NVLink &amp; Scaling Up</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li class="sec">The Systems</li>
+<li><a data-file="06-gb300-nvl72.html" data-id="gb300" href="06-gb300-nvl72.html"><span class="num">06</span><span class="lbl">GB300 NVL72 Rack</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li><a data-file="07-gb200-and-hgx.html" data-id="servers" href="07-gb200-and-hgx.html"><span class="num">07</span><span class="lbl">GB200 &amp; HGX Servers</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+<li class="sec">Going Deeper</li>
+<li><a data-file="08-parallelism.html" data-id="parallel" href="08-parallelism.html"><span class="num">08</span><span class="lbl">Inference Deep-Dive</span><span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.4l3.2 3.2L13 4.6" stroke="#76b900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li><li class="sec">Reference</li><li><a data-file="glossary.html" href="glossary.html"><span class="num">&#167;</span><span class="lbl">Glossary</span></a></li></ul></aside>
+<div class="main"><div class="wrap content">
+<div class="kicker">The Architecture · Module 5</div><h1>NVLink &amp; Scaling Up</h1><div class="meta"><span>Turning many GPUs into one</span><span class="dot"></span><span>6 min read</span><span class="dot"></span><span>Module 5 of 8</span></div><p class="lede">Individually, Blackwell GPUs are fast. The real magic is making dozens of them behave as <em>one</em>. That job belongs to 5th-generation NVLink and the NVLink Switch — the interconnect that turns a rack of chips into a single giant GPU.</p>
+<div class="stats"><div class="stat"><div class="big">1.8 TB/s</div><div class="lab">bandwidth per GPU</div></div><div class="stat"><div class="big">&gt;14×</div><div class="lab">the bandwidth of PCIe Gen5</div></div><div class="stat"><div class="big">576</div><div class="lab">GPUs max in one fabric</div></div><div class="stat"><div class="big">130 TB/s</div><div class="lab">in a 72-GPU domain</div></div></div>
+<h2><span class="hsh">#</span>Why interconnect is the bottleneck</h2>
+<p>A trillion-parameter model is too big for any single GPU, so it’s split across many (Module 8 covers how).
+Those GPUs must constantly swap data — and if the links between them are slow, the expensive compute sits idle.
+The ordinary <span class="gloss" data-term="PCIe Gen5 / Gen6">PCIe</span> bus simply isn’t fast enough.</p>
+
+<h2><span class="hsh">#</span>5th-generation NVLink</h2>
+<p><span class="gloss" data-term="NVLink">NVLink</span> is NVIDIA’s dedicated GPU-to-GPU link, and the 5th generation
+doubles the previous (Hopper) generation. Each link carries <strong>50 GB/s in each direction</strong>; with
+<strong>18 links</strong> per GPU that totals <strong>1.8 TB/s</strong> of bandwidth (900 GB/s each way) — over
+<strong>14×</strong> a PCIe Gen5 connection.</p>
+<figure><div class="diagram"><svg viewBox="0 0 680 124" role="img" aria-label="Bandwidth per GPU"><text x="172" y="35" font-size="13.5" font-family="-apple-system,Segoe UI,sans-serif" fill="#3c4632" text-anchor="end" dominant-baseline="middle">PCIe Gen5</text><rect x="184" y="25" width="30.0" height="20" rx="5" fill="#c3ccb4"/><text x="222.0" y="35" font-size="14" font-weight="700" font-family="-apple-system,Segoe UI,sans-serif" fill="#5c6654" dominant-baseline="middle">~0.13 TB/s</text><text x="172" y="81" font-size="13.5" font-family="-apple-system,Segoe UI,sans-serif" fill="#3c4632" text-anchor="end" dominant-baseline="middle">5th-gen NVLink</text><rect x="184" y="71" width="422.0" height="20" rx="5" fill="#76b900"/><text x="614.0" y="81" font-size="14" font-weight="700" font-family="-apple-system,Segoe UI,sans-serif" fill="#0c1108" dominant-baseline="middle">1.8 TB/s</text></svg></div><figcaption>Per-GPU interconnect bandwidth. NVLink moves data more than 14× faster than the standard PCIe bus.</figcaption></figure>
+<h2><span class="hsh">#</span>The NVLink Switch: 72 GPUs as one</h2>
+<p>NVLink links GPUs; the <span class="gloss" data-term="NVLink Switch">NVLink Switch</span> chip ties them into a single
+high-bandwidth <span class="gloss" data-term="NVLink domain">domain</span>. In a 72-GPU domain (NVL72) it moves
+<strong>130 TB/s</strong> of aggregate bandwidth, and adds <strong>4×</strong> efficiency with
+<span class="gloss" data-term="SHARP">SHARP</span> FP8 in-network reduction. The fabric scales up to
+<strong>576 GPUs</strong>, and lets the GB300 NVL72 reach <strong>9×</strong> the throughput of a single eight-GPU
+system.</p>
+
+<figure><div class="diagram">
+<svg viewBox="0 0 620 264" role="img" aria-label="NVLink switch connecting 72 GPUs into one domain">
+<g font-family="-apple-system,Segoe UI,sans-serif">
+<line x1="47" y1="56" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="111" y1="56" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="175" y1="56" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="239" y1="56" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="303" y1="56" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="367" y1="56" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="431" y1="56" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="495" y1="56" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="559" y1="56" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="47" y1="188" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="111" y1="188" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="175" y1="188" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="239" y1="188" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="303" y1="188" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="367" y1="188" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="431" y1="188" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="495" y1="188" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><line x1="559" y1="188" x2="310" y2="126" stroke="#bcdd86" stroke-width="1.1"/><rect x="24" y="26" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="88" y="26" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="152" y="26" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="216" y="26" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="280" y="26" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="344" y="26" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="408" y="26" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="472" y="26" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="536" y="26" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="24" y="188" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="88" y="188" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="152" y="188" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="216" y="188" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="280" y="188" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="344" y="188" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="408" y="188" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="472" y="188" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/><rect x="536" y="188" width="46" height="30" rx="6" fill="#e7f3d4" stroke="#5e9400"/>
+  <rect x="206" y="104" width="208" height="44" rx="10" fill="#0d1310"/>
+  <text x="310" y="131" text-anchor="middle" font-size="13.5" font-weight="700" fill="#9bd62a">NVLink Switch fabric</text>
+  <text x="310" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#5e9400">130 TB/s aggregate — 72 GPUs behave as one massive GPU</text>
+</g></svg></div><figcaption>Every GPU talks to every other through the switch fabric at full NVLink speed.</figcaption></figure>
+
+<div class="callout key"><div class="t">A number to sit with</div><p>The 130 TB/s moving inside one 72-GPU NVLink domain
+is <strong>more data movement than the entire internet</strong> handles at once.</p></div>
+<div class="done-row"><button id="completeBtn" class="btn">Mark this module complete</button><a class="btn ghost" href="06-gb300-nvl72.html">Continue →</a></div><nav class="pager"><a class="prev" href="04-the-engines.html"><span class="dir">← Prev</span><span class="ttl">The Engines</span></a><a class="next" href="06-gb300-nvl72.html"><span class="dir">Next →</span><span class="ttl">GB300 NVL72 Rack</span></a></nav>
+</div></div>
+</div>
+<script src="assets/glossary.js"></script>
+<script src="assets/app.js"></script>
+
+</body>
+</html>
