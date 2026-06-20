@@ -30,6 +30,7 @@ window.GLOSSARY = [
   {t:"RDMA", c:"Networking", d:"Remote Direct Memory Access — lets one machine read/write another's memory directly over the network without involving its CPU, cutting latency."},
   {t:"MoE (Mixture of Experts)", c:"AI models", d:"A model design split into many specialized sub-networks (‘experts’); each token is routed to only a few experts, so a huge model runs without using all its parameters at once."},
   {t:"LLM", c:"AI models", d:"Large Language Model — a neural network trained on vast text to generate and reason over language, e.g. GPT-class and reasoning models."},
+  {t:"transformer", c:"AI models", d:"The neural-network architecture behind modern LLMs. Its self-attention mechanism lets every token weigh its relationship to every other, which is what scales so well with more data and compute. MoE is one way to grow a transformer efficiently."},
   {t:"inference", c:"AI models", d:"Running a trained model to produce answers (as opposed to training it). Reasoning models do extra ‘thinking’ work at inference time."},
   {t:"test-time scaling", c:"Scaling laws", d:"Also called ‘long thinking.’ Spending more compute while answering — exploring multiple paths before replying — to reason through hard problems. Can need ~100× the compute of a single inference pass."},
   {t:"post-training scaling", c:"Scaling laws", d:"Refining a pre-trained model for specific tasks using fine-tuning and synthetic data. Can require ~30× more compute than the original pre-training."},
@@ -49,6 +50,8 @@ window.GLOSSARY = [
   {t:"inflight batching / chunking", c:"Inference", d:"Techniques that dynamically group and slice requests so the GPU stays busy, balancing time-to-first-token against tokens-per-second."},
   {t:"data / tensor / pipeline / expert parallelism", c:"Inference", d:"Four ways to split a huge model across GPUs: copy the whole model (data), split each layer (tensor), assign layer-groups in sequence (pipeline), or route to specific experts (expert). Combining them balances throughput and responsiveness."},
   {t:"Grace CPU", c:"Platform", d:"NVIDIA's Arm-based server CPU (Neoverse V2 cores). Paired with Blackwell GPUs over NVLink-C2C to form the Grace Blackwell ‘superchip.’"},
+  {t:"Hopper", c:"Platform", d:"NVIDIA's previous-generation GPU architecture (the H100/H200), predecessor to Blackwell. It introduced FP8 and the first-generation Transformer Engine; most of Blackwell's headline ‘×’ gains are quoted against it."},
+  {t:"HGX B300 / B200", c:"Platform", d:"NVIDIA's baseboard that mounts eight Blackwell GPUs into standard air-cooled x86 servers — the alternative to a Grace-CPU NVL72 rack for data centers that don't want a full liquid-cooled rack. HGX B300 targets AI reasoning; HGX B200 delivers 144 petaFLOPS of AI per system."},
   {t:"NVL72", c:"Platform", d:"A liquid-cooled rack that links 72 Blackwell GPUs + 36 Grace CPUs into one NVLink domain that behaves as a single massive GPU."},
   {t:"Cosmos", c:"AI models", d:"NVIDIA's family of ‘world foundation models’ for generating physically realistic video and 3D world simulations — used in Physical AI and robotics."}
 ];
